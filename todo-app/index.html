@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Görev Takip Uygulaması</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Görev Listesi</h1>
+  <button id="toggle-dark-mode">🌙 Dark Mode</button>
+
+  <div id="todo-container">
+    <input type="text" id="task-input" placeholder="Yeni görev girin..." />
+    <button id="add-task-btn">Ekle</button>
+
+    <div id="filter-buttons">
+      <button data-filter="all">Tüm</button>
+      <button data-filter="completed">Tamamlanan</button>
+      <button data-filter="active">Tamamlanmayan</button>
+    </div>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
